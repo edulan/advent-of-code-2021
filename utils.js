@@ -7,3 +7,5 @@ exports.not =
   (fn) =>
   (...args) =>
     !fn(...args);
+
+exports.sum = (array) => array.reduce((total, value) => total + value, 0);
